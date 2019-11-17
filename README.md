@@ -6,8 +6,8 @@ The main goal is to be able to track and record each of my workouts, adding new 
 existing movement or new ones and building a full personal and customisable workout session and program ! 
 
 ### Todo:
-- [ ] initiate README
-- [ ] install dev environment (prettier, husky)
+- [x] initiate README
+- [x] install dev environment (prettier, husky)
 - [ ] create DB: movement
 - [ ] create DB: exercise
 - [ ] create DB: workout

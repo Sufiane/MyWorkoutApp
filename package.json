@@ -1,0 +1,39 @@
+{
+  "name": "myworkoutapp",
+  "version": "1.0.0",
+  "description": "This project aim to help me (and you?) follow my workout progress !",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@commitlint/cli": "8.2.0",
+    "@commitlint/config-conventional": "8.2.0",
+    "eslint": "6.6.0",
+    "husky": "3.0.9",
+    "prettier": "1.19.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.js": "prettier:check && eslint"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier": "prettier --write \"**/*.js\"",
+    "prettier:check": "prettier --check \"**/*.js\"",
+    "eslint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sufiane/MyWorkoutApp.git"
+  },
+  "author": "Sufiane",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sufiane/MyWorkoutApp/issues"
+  },
+  "homepage": "https://github.com/Sufiane/MyWorkoutApp#readme"
+}
